@@ -35,6 +35,9 @@
   color: inherit;
   box-shadow: 0 1px 2px rgba(60,64,67,0.08);
   transition: box-shadow 0.15s ease, transform 0.1s ease;
+  overflow: hidden;
+  word-break: break-word;     
+  overflow-wrap: break-word; 
 }
 
 .note-card:hover {
@@ -50,7 +53,18 @@
 .note-body {
   font-size: 0.9rem;
   color: #5f6368;
-  white-space: pre-wrap;
+  white-space: pre-line;        
+  text-indent: 0 !important;       
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+}
+
+/* Removes indentation from ALL lines (IMPORTANT FIX) */
+.note-body * {
+  text-indent: 0 !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 .note-meta {
@@ -87,3 +101,4 @@
     bottom: 1rem;
   }
 }
+
