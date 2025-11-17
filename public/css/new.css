@@ -1,0 +1,47 @@
+.note-form-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+}
+
+.note-form {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 0.9rem 1rem 1rem;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 2px rgba(60,64,67,0.08);
+}
+
+.note-title-input {
+  border: none;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 1.2rem;
+}
+
+.note-title-input:focus {
+  box-shadow: none;
+}
+
+.note-content-input {
+  border: none;
+  resize: vertical;
+  min-height: 180px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.note-content-input:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 767.98px) {
+  .note-form-page {
+    padding-top: 0.25rem;
+  }
+
+  .note-form {
+    padding: 0.75rem 0.8rem 0.9rem;
+  }
+}

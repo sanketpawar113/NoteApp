@@ -1,0 +1,89 @@
+.app-content {
+  padding: 1rem 1.5rem 1.5rem;
+  background: #fff;
+}
+
+/* Home page */
+.notes-page {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* Empty state */
+.empty-state {
+  padding: 3rem 1rem;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  color: #c7c7c7;
+}
+
+/* Grid */
+.note-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 0.9rem;
+}
+
+.note-card {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.8rem;
+  border: 1px solid #e0e0e0;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 1px 2px rgba(60,64,67,0.08);
+  transition: box-shadow 0.15s ease, transform 0.1s ease;
+}
+
+.note-card:hover {
+  box-shadow: 0 3px 6px rgba(60,64,67,0.18);
+  transform: translateY(-1px);
+}
+
+.note-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.note-body {
+  font-size: 0.9rem;
+  color: #5f6368;
+  white-space: pre-wrap;
+}
+
+.note-meta {
+  margin-top: 0.5rem;
+}
+
+/* FAB Add Button */
+.add-note-fab {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(60,64,67,0.24);
+  z-index: 1050;
+}
+
+/* Mobile spacing */
+@media (max-width: 767.98px) {
+  .app-content {
+    padding: 0.85rem 0.9rem 1.3rem;
+  }
+
+  .note-grid {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  }
+
+  .add-note-fab {
+    right: 1rem;
+    bottom: 1rem;
+  }
+}

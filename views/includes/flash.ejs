@@ -1,0 +1,16 @@
+<main class="app-content flex-grow-1">
+  <% if (success && success.length > 0) { %>
+    <div class="alert alert-success alert-dismissible fade show mt-2">
+      <%= success %>
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+  <% } %>
+
+  <% if (error && error.length > 0) { %>
+    <div class="alert alert-danger alert-dismissible fade show mt-2">
+      <%= error %>
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+  <% } %>
+
+</main>

@@ -1,0 +1,62 @@
+.app-shell {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.app-sidebar {
+  width: 240px;
+  border-right: 1px solid #ececec;
+  background: #ffffff;
+  padding-top: 0.5rem;
+}
+
+.sidebar-inner {
+  width: 100%;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 1rem;
+  font-size: 0.95rem;
+  color: #555;
+  text-decoration: none;
+  border-radius: 0 999px 999px 0;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.sidebar-item i {
+  font-size: 1.1rem;
+}
+
+.sidebar-item:hover {
+  background: #f1f3f4;
+  color: #202124;
+}
+
+.sidebar-item.active {
+  background: #fffee7;
+  color: #202124;
+  font-weight: 500;
+}
+
+.sidebar-divider {
+  border-top: 1px solid #ececec;
+  margin: 0.4rem 0.75rem;
+}
+
+/* Right side */
+.main-panel {
+  background: #fff;
+}
+
+.offcanvas .sidebar-item {
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .app-sidebar {
+    display: none !important;
+  }
+}
