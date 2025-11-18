@@ -186,7 +186,7 @@ app.get("/login", (req, res) => {
 app.post("/login",
   passport.authenticate("local", {
     failureRedirect: "/login",
-    failureFlash: true   // enable flash on failure
+    failureFlash: true  
   }),
   (req, res) => {
     req.flash("success", "Welcome back, " + req.user.username + "!");
