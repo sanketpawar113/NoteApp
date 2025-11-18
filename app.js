@@ -94,7 +94,7 @@ app.use((req, res, next) => {
 // index
 app.get("/notes", isLoggedIn, async (req, res) => {
   const notes = await Note.find({ owner: req.user._id });
-  res.render("note/home", { notes });  // MATCHING YOUR FOLDER
+  res.render("note/home", { notes });
 });
 
 // new
